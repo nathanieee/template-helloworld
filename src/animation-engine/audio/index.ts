@@ -1,2 +1,2 @@
 // Audio system for animations
-// Placeholder for audio system exports
+export { SubtitleTrack } from './SubtitleTrack';
