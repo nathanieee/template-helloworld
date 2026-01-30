@@ -1,2 +1,5 @@
 // Particle system for animations
-// Placeholder for particle system exports
+export { DustParticles } from './DustParticles';
+export { DataParticles } from './DataParticles';
+export { SparkParticles } from './SparkParticles';
+export { SmokeParticles } from './SmokeParticles';
