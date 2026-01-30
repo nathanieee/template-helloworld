@@ -6,7 +6,11 @@
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src && tsc",
+    "render:youtube-4k": "remotion render MainVideo output-4k.mp4 --frames 0-9000 --width=3840 --height=2160 --pixel-format=yuv420p",
+    "render:youtube-1080p": "remotion render MainVideo output-1080p.mp4 --frames 0-9000 --width=1920 --height=1080 --pixel-format=yuv420p",
+    "render:scene": "remotion render MainVideo output-scene.mp4 --frames=$FROM-$TO",
+    "render:preview": "remotion render MainVideo output-preview.mp4 --frames=0-900 --jpeg-quality=80"
   },
   "repository": {},
   "license": "UNLICENSED",
