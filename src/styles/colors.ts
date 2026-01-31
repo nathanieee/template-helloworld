@@ -53,3 +53,53 @@ export const colors = {
   glow: "rgba(255, 255, 255, 0.2)",
   highlight: "rgba(255, 255, 255, 0.15)",
 };
+
+// Kurzgesagt Official Color Palette (from production guide)
+export const kurzgesagtColors = {
+  // Backgrounds
+  deepBlue: '#001372',
+  darkPurple: '#0b0054',
+  black: '#000000',
+
+  // Accents
+  brightPink: '#e30050',
+  orangeRed: '#e32e01',
+  goldenYellow: '#fbbe00',
+
+  // Brand
+  birdOrange: '#e47212',
+  birdYellow: '#f6be39',
+
+  // Services (matching production guide exactly)
+  usersBlue: '#4a90d9',
+  usersBlueLight: '#6aa8e3',
+  usersBlueDark: '#3a7ac9',
+
+  ordersGreen: '#4cd964',
+  ordersGreenLight: '#6ce97f',
+  ordersGreenDark: '#3cb954',
+
+  inventoryOrange: '#ff9500',
+  inventoryOrangeLight: '#ffb533',
+  inventoryOrangeDark: '#e68500',
+
+  gatewayPurple: '#9b59b6',
+  gatewayPurpleLight: '#b579c9',
+  gatewayPurpleDark: '#8b4996',
+
+  // Status
+  errorRed: '#e74c3c',
+  successGreen: '#2ecc71',
+
+  // Neutral
+  darkGrey: '#2c3e50',
+  white: '#ffffff',
+};
+
+// Service color mapping for easy access
+export const serviceColors = {
+  users: kurzgesagtColors.usersBlue,
+  orders: kurzgesagtColors.ordersGreen,
+  inventory: kurzgesagtColors.inventoryOrange,
+  gateway: kurzgesagtColors.gatewayPurple,
+} as const;
