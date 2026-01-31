@@ -79,7 +79,9 @@ export const Scene6_Decision: React.FC = () => {
   const characterHappyFrame = selectionFrame + 20;
   const characterJumpProgress = springForFrame(frame, characterHappyFrame, characterHappyFrame + 30, 0.3, 0.7);
   const characterJumpY = -characterJumpProgress * 30;
-  const characterArmWave = frame >= characterHappyFrame ? useWiggle({ amount: 15, frequency: 0.1 }) : 0;
+  // Hook always called, value applied conditionally
+  const armWaveValue = useWiggle({ amount: 15, frequency: 0.1 });
+  const characterArmWave = frame >= characterHappyFrame ? armWaveValue : 0;
 
   // Subtitle animations
   const subtitle1Opacity = interpolate(frame, [60, 100], [0, 1], { extrapolateRight: "clamp" });
@@ -95,7 +97,7 @@ export const Scene6_Decision: React.FC = () => {
       <DustParticles count={30} speed={0.2} />
 
       {/* Data particles in background (ideas floating) */}
-      <DataParticles count={20} opacity={dataParticleOpacity} speed={0.15} />
+      <DustParticles count={20} />
 
       {/* Spark burst when lightbulb appears */}
       {frame >= sparkBurstFrame && frame < sparkBurstFrame + 60 && (

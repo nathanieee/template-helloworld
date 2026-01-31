@@ -116,7 +116,7 @@ export const Scene8_Separation: React.FC = () => {
       <DustParticles count={30} speed={0.2} />
 
       {/* Data particles */}
-      <DataParticles count={20} opacity={dataParticleOpacity} speed={0.15} />
+      <DustParticles count={20} />
 
       {/* Spark bursts when services reach their positions */}
       {sparkBursts.map((burstFrame, i) => {

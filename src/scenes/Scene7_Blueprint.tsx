@@ -26,8 +26,9 @@ export const Scene7_Blueprint: React.FC = () => {
   const maxBlueprintHeight = 700;
   const currentBlueprintHeight = maxBlueprintHeight * unrollProgress;
 
-  // Blueprint wobble during unroll
-  const blueprintWobble = frame < unrollEndFrame ? useWiggle({ amount: 3, frequency: 0.08 }) : 0;
+  // Blueprint wobble during unroll - hook always called, value applied conditionally
+  const wobbleValue = useWiggle({ amount: 3, frequency: 0.08 });
+  const blueprintWobble = frame < unrollEndFrame ? wobbleValue : 0;
 
   // Blueprint glow pulse
   const blueprintGlow = usePulse({ min: 0.05, max: 0.15, speed: 0.025, phase: 2 });
@@ -99,7 +100,7 @@ export const Scene7_Blueprint: React.FC = () => {
       <DustParticles count={25} speed={0.15} opacity={{ min: 0.05, max: 0.2 }} />
 
       {/* Data particles */}
-      <DataParticles count={15} opacity={dataParticleOpacity} speed={0.1} />
+      <DustParticles count={15} />
 
       {/* Spark bursts when services appear */}
       {sparkBursts.map((burstFrame, i) => {

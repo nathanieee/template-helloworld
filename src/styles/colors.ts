@@ -91,6 +91,9 @@ export const kurzgesagtColors = {
   errorRed: '#e74c3c',
   successGreen: '#2ecc71',
 
+  // Network
+  networkGlow: 'rgba(99, 179, 237, 0.3)', // Glow effect for network lines
+
   // Neutral
   darkGrey: '#2c3e50',
   white: '#ffffff',

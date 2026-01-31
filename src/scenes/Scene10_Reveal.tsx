@@ -88,7 +88,7 @@ export const Scene10_Reveal: React.FC = () => {
       <DustParticles count={35} speed={0.2} />
 
       {/* Data particles */}
-      <DataParticles count={25} opacity={particleOpacity} speed={0.15} />
+      <DustParticles count={25} />
 
       {/* Initial flash */}
       {flashOpacity > 0 && (
