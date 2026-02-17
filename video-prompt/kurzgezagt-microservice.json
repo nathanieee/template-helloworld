@@ -1,0 +1,173 @@
+{
+  "project": {
+    "title": "Microservices in 2 Minutes",
+    "style": "Kurzgesagt-inspired flat animated explainer",
+    "duration_seconds": 120,
+    "fps": 30,
+    "total_frames": 3600,
+    "aspect_ratio": "16:9",
+    "resolution": {
+      "width": 1920,
+      "height": 1080
+    },
+    "output_format": "mp4"
+  },
+  "visual_style": {
+    "design_language": {
+      "graphics": "flat vector",
+      "shapes": "rounded",
+      "gradients": "soft",
+      "shadows": "subtle",
+      "parallax": true,
+      "animation_style": "smooth easing, spring-based motion"
+    },
+    "color_palette": {
+      "background": "#0B1026",
+      "primary_blue": "#2D6CDF",
+      "accent_yellow": "#FFD166",
+      "accent_red": "#EF476F",
+      "accent_green": "#06D6A0",
+      "accent_purple": "#9B5DE5",
+      "white": "#F8F9FA"
+    },
+    "typography": {
+      "font_style": "bold geometric sans-serif",
+      "title_weight": "700-800",
+      "body_weight": "400-500",
+      "text_usage": "minimal, mostly visual storytelling"
+    }
+  },
+  "audio": {
+    "voiceover_tone": "calm, friendly, educational, slightly playful",
+    "background_music": "soft ambient synth",
+    "sound_effects": [
+      "pop for service appearance",
+      "subtle glitch for crash",
+      "whoosh for transitions",
+      "gentle rise tone for ending"
+    ]
+  },
+  "remotion_structure": {
+    "composition": {
+      "id": "Microservices",
+      "durationInFrames": 3600,
+      "fps": 30,
+      "width": 1920,
+      "height": 1080
+    },
+    "animation_principles": {
+      "use_spring": true,
+      "use_interpolate": true,
+      "smooth_transitions": true,
+      "no_hard_cuts": true,
+      "floating_idle_animation": true
+    }
+  },
+  "scenes": [
+    {
+      "id": "scene_1_hook",
+      "frame_range": [0, 300],
+      "title": "The Monolith Problem",
+      "visual_description": "Large cube labeled MONOLITH containing auth, payment, database, API icons trapped inside. Cube begins to crack.",
+      "animations": [
+        "scale-in bounce",
+        "crack spreading animation",
+        "dramatic zoom"
+      ],
+      "voiceover": "What if your entire application was one giant block… and one tiny bug could bring everything down?",
+      "on_screen_text": "Monolithic Architecture"
+    },
+    {
+      "id": "scene_2_monolith_explained",
+      "frame_range": [300, 750],
+      "title": "How Monoliths Work",
+      "visual_description": "Single large server box with tightly connected internal modules using tangled lines. A bug icon drops in and system flashes red.",
+      "animations": [
+        "bug drop",
+        "red ripple failure effect",
+        "global shutdown flash"
+      ],
+      "voiceover": "In a monolith, everything runs together. If one part fails, the entire system can collapse."
+    },
+    {
+      "id": "scene_3_intro_microservices",
+      "frame_range": [750, 1350],
+      "title": "Introducing Microservices",
+      "visual_description": "Monolith explodes into multiple small colorful service boxes labeled Auth, Payment, Notification, User. They connect with animated API lines.",
+      "animations": [
+        "explosion morph transition",
+        "floating service boxes",
+        "animated API request dots"
+      ],
+      "voiceover": "Microservices break applications into small, independent services that communicate over APIs.",
+      "on_screen_text": "Small. Independent. Scalable."
+    },
+    {
+      "id": "scene_4_resilience",
+      "frame_range": [1350, 1950],
+      "title": "Resilience",
+      "visual_description": "Payment service turns red and crashes while other services remain green. A repair robot fixes the crashed service.",
+      "animations": [
+        "service turns red",
+        "warning pulse",
+        "repair animation"
+      ],
+      "voiceover": "If one service fails, others continue running. That means better resilience."
+    },
+    {
+      "id": "scene_5_scalability",
+      "frame_range": [1950, 2550],
+      "title": "Independent Scaling",
+      "visual_description": "User traffic icons increase. Payment service clones into multiple instances while others remain unchanged.",
+      "animations": [
+        "traffic wave animation",
+        "service duplication",
+        "load balancing dots moving"
+      ],
+      "voiceover": "Need more power? Scale only the services that need it.",
+      "on_screen_text": "Scale Independently"
+    },
+    {
+      "id": "scene_6_technology_freedom",
+      "frame_range": [2550, 3000],
+      "title": "Technology Freedom",
+      "visual_description": "Each service displays a different abstract tech icon. Despite differences, they connect smoothly via APIs.",
+      "animations": [
+        "tech icons fade in",
+        "API pulse between services"
+      ],
+      "voiceover": "Each service can use different technologies — as long as they speak the same language through APIs."
+    },
+    {
+      "id": "scene_7_tradeoffs",
+      "frame_range": [3000, 3300],
+      "title": "Trade-offs",
+      "visual_description": "Network lines multiply. Architecture becomes more complex. Monitoring dashboard appears.",
+      "animations": [
+        "network web expansion",
+        "dashboard fade in"
+      ],
+      "voiceover": "But microservices introduce complexity — networking, monitoring, deployment, and coordination.",
+      "on_screen_text": "More flexibility. More complexity."
+    },
+    {
+      "id": "scene_8_outro",
+      "frame_range": [3300, 3600],
+      "title": "Final Summary",
+      "visual_description": "Clean organized microservice architecture glowing softly. Slight orbiting camera motion.",
+      "animations": [
+        "gentle zoom out",
+        "soft glow pulse"
+      ],
+      "voiceover": "Microservices trade simplicity for scalability and resilience. They power modern platforms — from startups to global tech giants.",
+      "on_screen_text": "Microservices in 2 Minutes"
+    }
+  ],
+  "production_constraints": {
+    "vector_only": true,
+    "no_stock_footage": true,
+    "no_raster_images": true,
+    "smooth_scene_transitions": true,
+    "clean_center_balanced_layout": true
+  }
+}
